@@ -149,3 +149,12 @@ section {
   transform: scale(1.5);
   transition: transform 0.5s;
 }
+
+/*footer*/
+.page-footer {
+  background-color: #fff;
+}
+.page-footer p {
+  margin: 0;
+  padding: 10px;
+}
