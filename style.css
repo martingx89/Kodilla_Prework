@@ -1,0 +1,106 @@
+/* Global */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	text-align: center;
+	background: #333;
+	color: #8a8c8d;
+	font-size: 16px;
+	line-height: 1.7;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+section {
+	padding: 108px 0;
+}
+
+.section-title {
+	position: relative;
+	font-size: 36px;
+	margin: 0 0 60px 0;
+}
+
+.section-title::after {
+	position: absolute;
+	content: "";
+	bottom: -12px;
+	left: 50%;
+	width: 50px;
+	height: 10px;
+	transform: translateX(-50%);
+	background: #8a8c8d;
+}
+
+/* Splash */
+.splash {
+	height: 100vh;
+	position: relative;
+	background-image: url("https://i.postimg.cc/25CbRPgd/pexels-eberhard-grossgasteiger-1367192.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.splash .splash-inner {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.splash i {
+	font-size: 24px;
+	background: #8a8c8d;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	color: #fff;
+	border-radius: 50%;
+}
+
+.page-title {
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 32px;
+	margin: 48px 0 0 0;
+	position: relative;
+}
+
+.page-title::after {
+	position: absolute;
+	content: "";
+	bottom: -24px;
+	left: 50%;
+	width: 100px;
+	height: 10px;
+	transform: translateX(-50%);
+	background: #8a8c8d;
+}
+
+.page-subtitle {
+	color: #fff;
+	font-family: sans-serif;
+	margin: 48px 0 0 0;
+}
+
+/* Intro */
+.intro {
+	background: #fff;
+}
+.intro p {
+	width: 70%;
+	margin: 0 auto;
+	padding: 48px 0;
+	font-size: 24px;
+	border-top: 1px solid #8a8c8d;
+	border-bottom: 1px solid #8a8c8d;
+}

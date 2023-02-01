@@ -1,0 +1,117 @@
+/* Global */
+
+$color-main: #8a8c8d;
+$color-title: #fff;
+$color-background: #333;
+$image-source: "https://i.postimg.cc/K8r71XJL/background-image-00.jpg";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	text-align: center;
+	background: $color-background;
+	color: $color-main;
+	font-size: 16px;
+	line-height: 1.7;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+section {
+	padding: 108px 0;
+}
+
+.section-title {
+	position: relative;
+	font-size: 36px;
+	margin: 0 0 60px 0;
+}
+
+.section-title::after {
+	position: absolute;
+	content: "";
+	bottom: -12px;
+	left: 50%;
+	width: 50px;
+	height: 10px;
+	transform: translateX(-50%);
+	background: $color-main;
+}
+
+/* Splash */
+
+.splash {
+	height: 100vh;
+	position: relative;
+	background-image: url($image-source);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+
+	.splash-inner {
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	i {
+		font-size: 24px;
+		background: $color-main;
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		color: $color-title;
+		border-radius: 50%;
+	}
+}
+
+.page-title {
+	color: $color-title;
+	font-family: sans-serif;
+	font-size: 32px;
+	// word-spacing: 0.1em;
+	margin: 48px 0 0 0;
+	position: relative;
+}
+.page-title::after {
+	position: absolute;
+	content: "";
+	bottom: -24px;
+	left: 50%;
+	width: 100px;
+	height: 10px;
+	transform: translateX(-50%);
+	background: $color-main;
+}
+
+.page-subtitle {
+	color: $color-title;
+	font-family: sans-serif;
+	margin: 48px 0 0 0;
+}
+
+/* Intro */
+
+.intro {
+	background: $color-title;
+
+	p {
+		width: 70%;
+		margin: 0 auto;
+		padding: 48px 0;
+		font-size: 24px;
+		border-top: 1px solid $color-main;
+		border-bottom: 1px solid $color-main;
+	}
+}
