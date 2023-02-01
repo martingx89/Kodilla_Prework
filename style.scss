@@ -170,16 +170,18 @@ section {
 	align-items: center;
 
 	input {
-		width: 300px;
-		height: 36px;
+		width: 400px;
+		height: 48px;
 		margin: 10px;
 		border-radius: 5px;
+		font-family: $font-regular;
+		font-size: 18px;
+		
 	}
 	.button {
-		width: 100px;
-		height: 36px;
+		width: 200px;
+		height: 48px;
 		background-color: $color-main;
-		font-family: $font-regular;
 		color: $color-background;
 	}
 }

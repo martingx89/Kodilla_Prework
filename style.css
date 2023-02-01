@@ -157,16 +157,17 @@ section {
   align-items: center;
 }
 .submit-form input {
-  width: 300px;
-  height: 36px;
+  width: 400px;
+  height: 48px;
   margin: 10px;
   border-radius: 5px;
+  font-family: "Cabin", Sans-Serif;
+  font-size: 18px;
 }
 .submit-form .button {
-  width: 100px;
-  height: 36px;
+  width: 200px;
+  height: 48px;
   background-color: #bcb09e;
-  font-family: "Cabin", Sans-Serif;
   color: #3d3327;
 }
 
