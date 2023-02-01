@@ -10,6 +10,7 @@ body {
   text-align: center;
   background: #3d3327;
   color: #bcb09e;
+  font-family: "Cabin", Sans-Serif;
   font-size: 16px;
   line-height: 1.7;
 }
@@ -26,6 +27,7 @@ section {
 
 .section-title {
   position: relative;
+  font-family: "Roboto Condensed", Sans-Serif;
   font-size: 36px;
   margin: 0 0 60px 0;
 }
@@ -69,7 +71,7 @@ section {
 
 .page-title {
   color: #fff;
-  font-family: sans-serif;
+  font-family: "Roboto Condensed", Sans-Serif;
   font-size: 32px;
   margin: 48px 0 0 0;
   position: relative;
