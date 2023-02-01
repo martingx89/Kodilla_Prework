@@ -119,3 +119,45 @@ section {
 		border-bottom: 1px solid $color-main;
 	}
 }
+
+/* Skills */
+
+.skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.skills ul li {
+	position: relative;
+}
+
+.skill-image {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.skill.right .skill-image {
+	right: 0;
+}
+.skill.left .skill-image {
+	left: 0;
+}
+
+.skill.right .skill-description {
+	padding: 36px 55% 36px 0;
+	text-align: right;
+}
+
+.skill.left .skill-description {
+	padding: 36px 0 36px 55%;
+	text-align: left;
+}
+
+.skill-image img:hover {
+	transform: scale(1.5);
+	transition: transform 0.5s;
+}
