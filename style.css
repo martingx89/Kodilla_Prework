@@ -150,6 +150,26 @@ section {
   transition: transform 0.5s;
 }
 
+/*contact*/
+.submit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.submit-form input {
+  width: 300px;
+  height: 36px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.submit-form .button {
+  width: 100px;
+  height: 36px;
+  background-color: #bcb09e;
+  font-family: "Cabin", Sans-Serif;
+  color: #3d3327;
+}
+
 /*footer*/
 .page-footer {
   background-color: #fff;
