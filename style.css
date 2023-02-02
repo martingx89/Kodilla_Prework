@@ -170,6 +170,14 @@ section {
   background-color: #bcb09e;
   color: #3d3327;
 }
+.submit-form textarea {
+  resize: none;
+  width: 400px;
+  margin: 10px;
+  border-radius: 5px;
+  font-family: "Cabin", Sans-Serif;
+  font-size: 18px;
+}
 
 /*footer*/
 .page-footer {

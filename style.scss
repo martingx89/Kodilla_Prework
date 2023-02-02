@@ -176,13 +176,21 @@ section {
 		border-radius: 5px;
 		font-family: $font-regular;
 		font-size: 18px;
-		
 	}
 	.button {
 		width: 200px;
 		height: 48px;
 		background-color: $color-main;
 		color: $color-background;
+	}
+
+	textarea {
+		resize: none;
+		width: 400px;
+		margin: 10px;
+		border-radius: 5px;
+		font-family: $font-regular;
+		font-size: 18px;
 	}
 }
 
