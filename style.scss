@@ -6,6 +6,10 @@ $color-background: #3d3327;
 $image-source: "https://i.postimg.cc/K8r71XJL/background-image-00.jpg";
 $font-title: "Roboto Condensed", Sans-Serif;
 $font-regular: "Cabin", Sans-Serif;
+$section-title-font-size: 32px;
+$section-title-margin-bottom: 60px;
+$section-title-after-height: 10px;
+$section-title-after-bottom: -12px;
 
 *,
 *::before,
@@ -23,6 +27,14 @@ body {
 	line-height: 1.7;
 }
 
+.button {
+	width: 200px;
+	height: 48px;
+	background-color: $color-main;
+	color: $color-background;
+	border-radius: 5px;
+}
+
 .container {
 	max-width: 1140px;
 	margin: 0 auto;
@@ -36,17 +48,17 @@ section {
 .section-title {
 	position: relative;
 	font-family: $font-title;
-	font-size: 32px;
-	margin: 0 0 60px 0;
+	font-size: $section-title-font-size;
+	margin: 0 0 $section-title-margin-bottom 0;
 }
 
 .section-title::after {
 	position: absolute;
 	content: "";
-	bottom: -12px;
+	bottom: $section-title-after-bottom;
 	left: 50%;
 	width: 50px;
-	height: 10px;
+	height: $section-title-after-height;
 	transform: translateX(-50%);
 	background: $color-main;
 }
@@ -56,10 +68,7 @@ section {
 .splash {
 	height: 100vh;
 	position: relative;
-	background-image: url($image-source);
-	background-position: center center;
-	background-size: cover;
-	background-attachment: fixed;
+	background: url($image-source) center center / cover fixed;
 
 	.splash-inner {
 		position: absolute;
@@ -136,7 +145,7 @@ section {
 	width: 50%;
 	height: 100%;
 	object-fit: cover;
-	border-radius: 5px;
+	border-radius: 15px;
 	overflow: hidden;
 }
 
@@ -177,12 +186,6 @@ section {
 		font-family: $font-regular;
 		font-size: 18px;
 	}
-	.button {
-		width: 200px;
-		height: 48px;
-		background-color: $color-main;
-		color: $color-background;
-	}
 
 	textarea {
 		resize: none;
@@ -192,6 +195,53 @@ section {
 		font-family: $font-regular;
 		font-size: 18px;
 	}
+	.button {
+		width: 200px;
+	}
+}
+/*gallery*/
+
+.gallery ul {
+	list-style-type: none;
+	position: relative;
+	padding-left: 0;
+}
+.gallery-image {
+	float: left;
+	width: 33.3333%;
+	height: 100%;
+	line-height: 0;
+	position: relative;
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.btn-1 {
+	transition: 0.5s ease-in-out;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+.gallery-image img:hover {
+	opacity: 0.5;
+}
+.gallery-image:hover .btn-1 {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.row::before,
+.row::after {
+	clear: both;
+	content: "";
+	display: table;
 }
 
 /*footer*/
