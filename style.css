@@ -20,6 +20,7 @@ body {
   height: 48px;
   background-color: #bcb09e;
   color: #3d3327;
+  border-radius: 5px;
 }
 
 .container {
@@ -54,10 +55,7 @@ section {
 .splash {
   height: 100vh;
   position: relative;
-  background-image: url("https://i.postimg.cc/K8r71XJL/background-image-00.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
+  background: url("https://i.postimg.cc/K8r71XJL/background-image-00.jpg") center center/cover fixed;
 }
 .splash .splash-inner {
   position: absolute;
